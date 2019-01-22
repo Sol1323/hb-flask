@@ -46,7 +46,9 @@ def say_hello():
           <input type="text" name="person">
           <br>
           Compliment:
-           <input type="radio" name="compliment" value="mild">mild</input>
+           <label>
+                <input class="with-gap" type="radio" name="compliment" value="mild">mild</input>
+           </label>
            <input type="radio" name="compliment" value="extreme">extreme!</input>
            <br>
           <input type="submit" value="Submit">
@@ -64,6 +66,31 @@ def say_hello():
         </form>
 
       </body>
+    </html>
+    """
+
+
+@app.route("/test")
+def populate_input_forms:
+
+    radio_buttons = ""
+
+    for word in AWESOMENESS:
+        my_string = 
+
+    return """
+    <!doctype html>
+    <html>
+    <head>
+        <title>Test Input Forms</title>
+    </head>
+    <body>
+
+    Insults:
+           <input type="radio" name="insults" value="mild">mild</input>
+           <input type="radio" name="insults" value="extreme">extreme!</input>
+          <input type="submit" value="Submit">
+    </body>
     </html>
     """
 
